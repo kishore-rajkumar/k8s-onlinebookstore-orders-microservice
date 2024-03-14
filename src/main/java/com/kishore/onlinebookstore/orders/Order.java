@@ -4,14 +4,19 @@ import java.time.LocalDate;
 import java.util.List;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.Data;
 
+@Data
 @AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
+/*
+ * 
+ * 
+ * @NoArgsConstructor
+ * 
+ * @Getter
+ * 
+ * @Setter
+ */
 public class Order {
     private Long id;		 			//Unique identifier for the order.
     private Long userId; 	 			//Unique identifier for the user who placed the order.
